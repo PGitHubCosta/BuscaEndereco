@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/BuscasEndereco/BuscaEndereco/BuscaEndereco.csproj",
+      "projectUniqueName": "/workspaces/BuscaEndereco/BuscaEndereco/BuscaEndereco.csproj",
       "projectName": "BuscaEndereco",
-      "projectPath": "/workspaces/BuscasEndereco/BuscaEndereco/BuscaEndereco.csproj",
+      "projectPath": "/workspaces/BuscaEndereco/BuscaEndereco/BuscaEndereco.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/BuscasEndereco/BuscaEndereco/obj/",
+      "outputPath": "/workspaces/BuscaEndereco/BuscaEndereco/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"
