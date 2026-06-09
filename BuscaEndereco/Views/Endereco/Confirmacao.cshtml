@@ -1,0 +1,54 @@
+@model BuscaEndereco.Models.EnderecoViewModel
+
+@{
+    ViewData["Title"] = "Dados Gravados";
+}
+
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card border-success shadow">
+        <div class="card-header bg-success text-white text-center p-3">
+            <h3 class="mb-0">📋 Endereço Salvo — Somente Leitura</h3>
+        </div>
+        <div class="card-body p-4">
+            
+            <p class="text-muted mb-4 text-center">
+                Os dados abaixo combinam o que você preencheu manualmente com as informações obtidas via AJAX (ViaCEP).
+            </p>
+
+            <table class="table table-bordered table-striped">
+                <tbody>
+                    <tr>
+                        <th scope="row" class="w-40 bg-light">CEP:</th>
+                        <td>@Model.Cep</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="bg-light">Rua/Logradouro:</th>
+                        <td>@Model.Logradouro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="bg-light">Bairro:</th>
+                        <td>@Model.Bairro</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="bg-light">Cidade / UF:</th>
+                        <td>@Model.Cidade — @Model.Estado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="bg-light">Número Digitado:</th>
+                        <td><strong>@Model.Numero</strong></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="bg-light">Complemento:</th>
+                        <td>@(string.IsNullOrEmpty(Model.Complemento) ? "Nenhum" : Model.Complemento)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="mt-4">
+                <a asp-controller="Endereco" asp-action="Index" class="btn btn-outline-success w-100">
+                    🔄 Cadastrar Outro Endereço
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
